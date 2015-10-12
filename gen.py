@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 if __name__ == "__main__":
     from pathlib import Path
     from jinja2 import Template
