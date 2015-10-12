@@ -25,3 +25,4 @@ if __name__ == "__main__":
     t = Template(template_text)
     with open("index.html", "w") as f:
         f.write(t.render(songs=songs))
+    print("index.html generated")
