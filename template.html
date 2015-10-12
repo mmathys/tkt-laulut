@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <title>Lauluwiki - Songwiki</title>
+    <meta charset="utf-8"/>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <link rel="apple-touch-icon" sizes="57x57" href="icons/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="icons/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="icons/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="icons/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="icons/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="icons/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="icons/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="icons/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="icons/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="icons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png">
+
+    <link rel="manifest" href="icons/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="icons/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container col-md-6 col-md-offset-3">
+        <div class="page-header"><h1 class="text-center">Lauluwiki - Songwiki</h1></div>
+
+        <div class="">
+            <h3 class="text-center" id="toc">Sisällys - Table of contents</h2>
+            <ul class="list-unstyled">
+                {% for i in songs %}
+                <li class="text-center"><a href="#{{i.name}}">{{i.name}}</a></li>
+                {% endfor %}
+            </ul>
+        </div>
+
+    {% for i in songs %}
+        <div class="panel panel-success">
+            <div class="panel-heading text-center text-uppercase"><h4 id="{{ i.name }}">{{ i.name }}</h4></div>
+            
+            <div class="panel-body"><p class="text-center">
+                {% for j in i.lyrics %}
+                {{ j }}<br>
+                {% endfor %}
+            </div>
+
+            {% if i.melody %}
+            <div class="panel-footer"><p class="text-center">Melodia/melody: <em>{{ i.melody }}</em></p></div>
+    {% endif %}
+    </div>
+    {% endfor %}
+    </div>
+</body>
+</html>
