@@ -66,7 +66,7 @@
 * intelligenzia?
 
 # Mitä ei laulukirjaan
-* Poliittisia lauluja
+* Puoluepoliittisia lauluja
 * Selkeästi ei-saatiriset seksisti/rasisti/jne laulut
 * Kerava säkeitä
     * kerava tulee sydämestä
