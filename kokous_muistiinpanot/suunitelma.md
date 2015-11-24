@@ -10,7 +10,9 @@
 * Laulujen listaus ja haku
 * Laulujen lisääminen ja muokkaaminen
 * Laulujen kategorisointi
-* Laulujen ja säkeiden merkkaaminen tuhmiksi
+* Laulujen ja säkeiden merkkaaminen "tuhmiksi"
+* Responsiiviset
+* Vähintään suomi + englanti
 
 # Fyysinen kopio
 * Numerointi virsikirjan tyyliin
@@ -45,15 +47,16 @@
     * tko-älyn logo, ei muuta
 
 # Deadlineja
-* 2016.1.31 mennessä olennaiset laulut digitalisoitu
-* 2016.3.31 mennessä lauluwiki osoitteessa laulut.tko-aly.fi
-* 2016.4.30 mennessä ensimmäinen versio taitosta
-* 2016.6.30 mennessä laulukirja painossa
+* 2016.01.31 mennessä olennaiset laulut digitalisoitu
+* 2016.03.31 mennessä lauluwiki osoitteessa laulut.tko-aly.fi
+* 2016.04.30 mennessä ensimmäinen versio taitosta
+* 2016.06.30 mennessä laulukirja painossa
 
 # Etsitään
 * Taittajaa
 * Nakkeilijoita, laulujen digitalisointiin
 * Lauluwikin koodaajia
+* Taiteilijoita/runoilijoita/vitsiniekkoja
 
 # Toiveita
 * k-k-k-k-koskenkorvaan virallinen sivari lisäsäkeistö
@@ -68,6 +71,6 @@
 # Mitä ei laulukirjaan
 * Puoluepoliittisia lauluja
 * Selkeästi ei-saatiriset seksisti/rasisti/jne laulut
-* Kerava säkeitä
+* Kerava (tyylisiä) säkeitä
     * kerava tulee sydämestä
     * https://www.cs.helsinki.fi/u/lwahonen/kerava.pdf
