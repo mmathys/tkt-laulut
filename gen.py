@@ -20,7 +20,8 @@ if __name__ == "__main__":
                 lyrics.append(j[:-1])
             songs.append({"name":name, "melody":melody, "lyrics":lyrics})
 
-    songs.sort(key=lambda x:name)
+    from operator import itemgetter
+    songs.sort(key=itemgetter("name"))
 
     t = Template(template_text)
     with open("index.html", "w") as f:
