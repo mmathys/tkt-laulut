@@ -6,4 +6,4 @@ NoSQL, NoSQL.
 
 HTML5, HTML5, JSON, JSON,
 WebGL sekä Bootstrap, WebGL sekä Bootstrap,
-Sass, Sass.
+SCSS, SCSS.
