@@ -1,0 +1,38 @@
+\documentclass{book}
+
+\usepackage[a6paper, portrait, outer=1cm, inner=1.5cm, tmargin=1.7cm, bmargin=1.5cm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{verse}
+\usepackage{imakeidx}
+\usepackage{expl3}
+\usepackage{calc}
+\usepackage{tabto}
+\usepackage{titlesec}
+
+\makeindex[title=Hakemisto,intoc,columns=1]
+
+\makeatletter
+\def\@hspace#1{\begingroup\setlength\dimen@{#1}\hskip\dimen@\endgroup}
+\makeatother
+
+{\makeatletter\gdef\reallynopagebreak{\par\nopagebreak\@nobreaktrue}}
+
+\newenvironment{glue}
+  {\par\nobreak\vfil\penalty0\vfilneg
+   \vtop\bgroup}
+  {\par\xdef\tpd{\the\prevdepth}\egroup
+   \prevdepth=\tpd}
+
+%\DeclareUnicodeCharacter{00A0}{~}
+
+\begin{document}
+\raggedbottom
+
+
+\small
+
+\input{laulut.tex}
+
+\printindex
+
+\end{document}
