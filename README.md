@@ -19,7 +19,7 @@ All songs must be inside songs directory (no subdirectories), one song per file.
   * Use `:,:` to signify a repeated part of a song (see `drunken_sailor.txt` and many others)
   * Use `# ` to signify foresinger or similiar (see `kalmarevisan.txt`)
   * Songs with lots of very similiar verses,
-    don't write every verse completely (see `henkilokunta.txt`, and `kun_mä_kuolen.txt`)
+    don't write every verse completely (see `henkilokunta.txt`, and `kun_mä_kuolen.txt` and many others)
   * Extra directions inside usually inside parentheses
 
 # Ordering format
