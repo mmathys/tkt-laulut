@@ -24,7 +24,7 @@ All songs must be inside songs directory (no subdirectories), one song per file.
 * Column 2+, Alternative names for the song (used in index)
 
 # How to help
-´Fork -> Add songs -> Pull Request´
+`Fork -> Add songs -> Pull Request`
 Always remember to first check if a song exists, before adding it.
 
 # Song requests
