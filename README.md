@@ -26,7 +26,7 @@ All songs must be inside songs directory (no subdirectories), one song per file.
 # How to help
 `Fork -> Add songs -> Pull Request`
 
-Always remember to first check if a song exists, before adding it.  
+Always remember to first check if a song exists, before adding it.
 Alternative names can be added to the ordering file.
 
 # Song requests
