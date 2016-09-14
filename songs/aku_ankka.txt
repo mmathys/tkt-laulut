@@ -51,6 +51,3 @@ Sanat valhetta on, mutta sitä en kadu:
 Ostakaa nyt lapsillenne uusi Aku."
 oh yeah, oh yeah, oh yeah.
 
-{
-"historia": "Aku Ankan tilaaminen Helsingin yliopiston kirjastoon lopetettiin 60-luvulla siveellisyyssyistä"
-}
