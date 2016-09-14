@@ -29,11 +29,12 @@ def line_hack(line):
     line = line.replace(";,;", ":,:")
     if line.startswith(":,:"):
         line = "\\hspace{0pt-\\widthof{:,: }}"+line
-    if line: line += "\\\\"
+    if line:
+        line += "\\\\"
     return line
 
 
-def generate_song(data, first):
+def generate_song(data):
     out = []
 
     title = data["title"]
@@ -63,15 +64,21 @@ def generate_song(data, first):
 
     out.append("\\index{{{}}}".format(index_hack(title)))
 
-    if not first:
-        out.append("\\noindent\\begin{minipage}{\\linewidth}")
-    out.append("\\begin{verse}")
+    first = True
 
-    for line in lyrics.split("\n"):
-        out.append("\t" + line_hack(line))
+    for verse in lyrics:
+        if not first:
+            out.append("\\noindent\\begin{minipage}{\\linewidth}")
+        else:
+            first = False
 
-    out.append("\\end{verse}")
-    out.append("\\end{minipage}\\\\[" + VERSE_SKIP + "]")
+        out.append("\\begin{verse}")
+
+        for line in verse:
+            out.append("\t" + line_hack(line))
+
+        out.append("\\end{verse}")
+        out.append("\\end{minipage}\\\\[" + VERSE_SKIP + "]")
 
     return "\n".join(out)
 
@@ -100,7 +107,9 @@ def main(order_file, song_dir):
 
             title = lines[0]
             melody = lines[1] if len(lines[1]) > 0 else None
-            lyrics = "\n".join(list(filter(lambda s: len(s) != 0, lines[2:])))
+            lyrics = "\n".join(lines[2:])
+            lyrics = lyrics.split("\n\n")
+            lyrics[:] = [line.split("\n") for line in lyrics]
 
             data.append({
                 "title": title,
@@ -110,9 +119,8 @@ def main(order_file, song_dir):
                 "lyrics": lyrics
             })
 
-    print(generate_song(data[0], True))
-    for i in data[1:]:
-        print(generate_song(i, False))
+    for i in data:
+        print(generate_song(i))
 
 if __name__ == "__main__":
     from sys import argv
