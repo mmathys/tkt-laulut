@@ -4,7 +4,7 @@ Laulattaako? No hätä, käpistelijät auttavat.
 Super Virallinen IRC: #tkt-laulut (@IRCnet)
 
 * Step 0: Install python >=3.4 and texlive-full
-* Step 1: run ´./build.sh´
+* Step 1: run `./build.sh`
 * Step 2: ???
 * Step 3: Profit!
 
@@ -16,10 +16,10 @@ All songs must be inside songs directory (no subdirectories), one song per file.
 * Rest of the lines, lyrics of the song
   * Seperate verses with a single empty line
   * Empty lines at beginning and end are ignored
-  * Use `:,:` to signify a repeated part of a song (see `drunker_sailor.txt` and many others)
+  * Use `:,:` to signify a repeated part of a song (see `drunken_sailor.txt` and many others)
   * Use `# ` to signify foresinger or similiar (see `kalmarevisan.txt`)
   * Songs with lots of very similiar verses,
-    don't write every verse completely (see `henkilokunta.txt`, and `kun_mä_kuolen.txt`)
+    don't write every verse completely (see `henkilokunta.txt`, and `kun_mä_kuolen.txt` and many others)
   * Extra directions inside usually inside parentheses
 
 # Ordering format
