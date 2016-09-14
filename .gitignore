@@ -1,3 +1,10 @@
-index.html
 *~
 .DS*
+*.aux
+*.idx
+*.ilg
+*.ind
+*.log
+*.pdf
+*.toc
+laulut.tex
